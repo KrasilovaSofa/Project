@@ -1,0 +1,131 @@
+body {
+	max-width: 1062px;
+	width: 100%;
+	margin: auto;
+	background: url('img/gaf.jpg') no-repeat center;
+	height: 100%;
+	color: #000000;
+}
+
+.header {
+    position: relative;
+    top: -35px;
+    left: -70px;
+	justify-content: space-around;
+	margin-top: 90px;
+	margin-bottom: 50px;
+
+}
+
+.menu-list {
+    font-size: 30px;
+    position: relative;
+    top: -50px;
+    left: 230px;
+	display: flex;
+	list-style-type: none;
+}
+
+.menu-item:not(:last-child) {
+	margin-right: 63px;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+
+}
+
+.active {
+	font-weight: bold;
+
+}
+
+.main-text {
+    position: relative;
+    top: -190px;
+    left: 25px;
+	font-weight: 500;
+	font-size: 53px;
+	line-height: 62px;
+
+}
+
+.quote {
+    position: relative;
+    top: -110px;
+    left: 25px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	margin-left: 0px;
+	opacity: 0.7;
+
+}
+
+.button-order {
+	all: unset;
+	padding: 22px 55px;
+	background: 3f6762c;
+	border-width: 5px;
+	color: #000000;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.main {
+	max-width: 500px;
+}
+
+
+
+
+
+
+
+
+.card {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: -160px;
+    left: 450px;
+color: #000000; 
+border: 1px solid ;
+    }
+
+    .product,
+.description {
+width: 100%;
+height: 100%; 
+position: absolute; 
+ left: 0; 
+top: 0; 
+text-align: center; background-color: #52606d;
+backface-visibility: hidden;
+transition: 1s;
+}
+.description a {
+    display: inline-block;
+padding: 10px 30px; 
+margin-top: 30px;
+ text-transform:uppercase;
+text-decoration: none;
+color: #000000; 
+background-color:#e4e2e7 ;
+}
+.description { 
+    padding: 40px;
+    box-sizing: border-box;
+    transform: rotateY(
+    180deg
+    );
+}
+.card:hover .product {
+    transform: rotateY(180deg);
+}
+.card:hover .description {
+    transform: rotateY(360deg) 
+}
