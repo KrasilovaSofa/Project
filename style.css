@@ -1,131 +1,133 @@
 body {
-	max-width: 1062px;
-	width: 100%;
-	margin: auto;
-	background: url('img/gaf.jpg') no-repeat center;
-	height: 100%;
-	color: #000000;
+    margin: 0;
+    padding: 0;
+    clear:both;
 }
 
-.header {
-    position: relative;
-    top: -35px;
-    left: -70px;
-	justify-content: space-around;
-	margin-top: 90px;
-	margin-bottom: 50px;
-
-}
-
-.menu-list {
-    font-size: 30px;
-    position: relative;
-    top: -50px;
-    left: 230px;
-	display: flex;
-	list-style-type: none;
-}
-
-.menu-item:not(:last-child) {
-	margin-right: 63px;
-}
-
-.menu-item a {
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-
-}
-
-.active {
-	font-weight: bold;
-
-}
-
-.main-text {
-    position: relative;
-    top: -190px;
-    left: 25px;
-	font-weight: 500;
-	font-size: 53px;
-	line-height: 62px;
-
-}
-
-.quote {
-    position: relative;
-    top: -110px;
-    left: 25px;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 21px;
-	margin-left: 0px;
-	opacity: 0.7;
-
-}
-
-.button-order {
-	all: unset;
-	padding: 22px 55px;
-	background: 3f6762c;
-	border-width: 5px;
-	color: #000000;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
-}
-
-.main {
-	max-width: 500px;
-}
-
-
-
-
-
-
-
-
-.card {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    position: relative;
-    top: -160px;
-    left: 450px;
-color: #000000; 
-border: 1px solid ;
+footer, header, aside, nav, article {
+    display: block;
     }
 
-    .product,
-.description {
-width: 100%;
-height: 100%; 
-position: absolute; 
- left: 0; 
-top: 0; 
-text-align: center; background-color: #52606d;
-backface-visibility: hidden;
-transition: 1s;
+a {    text-decoration: none;}
+
+header {
+    height: 150px;
+    width:100%;
+    background-color: #13438B;
+    color: #fff;
 }
-.description a {
-    display: inline-block;
-padding: 10px 30px; 
-margin-top: 30px;
- text-transform:uppercase;
-text-decoration: none;
-color: #000000; 
-background-color:#e4e2e7 ;
+
+#logo {
+    width: 150px;
+    height: 150px;
+    float: left;
 }
-.description { 
-    padding: 40px;
-    box-sizing: border-box;
-    transform: rotateY(
-    180deg
-    );
+#logo img {
+    position: relative;
+    padding: 25px;
+    height: 100px;
 }
-.card:hover .product {
-    transform: rotateY(180deg);
+
+nav {
+    width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    float: left;
+    color: white;
 }
-.card:hover .description {
-    transform: rotateY(360deg) 
+
+nav ul {
+    font-size: 18px;
+    max-width: 800px;
+    height: 150px;
+    margin: 0;
+    float: left;
+    position: relative;
+    left: 50px;
+}
+
+nav ul li {    
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 150px;
+    line-height: 150px;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    color: white;
+}
+nav ul li:hover {
+    background-color: #00294d;
+    color: #8adaff;
+}
+
+.nav_link {
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #c2c2c2;
+    float: left;
+    position: relative;
+    top: 45px;
+    left: 100px;
+}
+
+.nav_link:hover {
+    background-color: #2f2f2f;
+}
+
+#slider {
+    width: 100%;
+    height: 350px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+content {
+    height: 100%;
+    margin: 0 auto;
+    padding: 120px 0;
+    display: block;
+}
+
+.news {
+    max-height: 150px;
+    padding: 30px;
+    position: relative;
+    float: left;
+}
+
+.news img {
+    float: left;
+    margin: 25px 10px;
+}
+
+.news-content {
+    width: 70%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 30px;
+}
+
+.news-title {
+    padding: 0 0 15px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+section h1 {
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+@media screen (max-width: 420px;) {
+    .nav_link {
+        font-size: 12px;
+    }
+    
 }
